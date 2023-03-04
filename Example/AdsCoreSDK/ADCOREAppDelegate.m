@@ -7,12 +7,14 @@
 //
 
 #import "ADCOREAppDelegate.h"
+@import GoogleMobileAds;
 
 @implementation ADCOREAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [GADMobileAds.sharedInstance startWithCompletionHandler:nil];
     return YES;
 }
 
